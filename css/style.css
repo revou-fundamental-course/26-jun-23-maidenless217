@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -69,6 +70,12 @@ header {
     color: var(--text-color);
 }
 
+.navbar button:hover {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    transition: 0.50s all ease;
+}
+
 .navbar button {
     padding: 5px 20px;
     background-color: var(--bg-color);
@@ -94,9 +101,10 @@ header {
 }
 
 main {
-    padding-top: 50px;
+    padding: 60px 0 50px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 10px dotted var(--grey-trans);
 }
 
 article {
@@ -199,3 +207,42 @@ select:required:invalid {
   option {
     color: #000;
   }
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--main-color);
+}
+
+.benefit h1 {
+    font-size: 30px;
+    font-style: italic;
+    color: var(--bg-color);
+    text-shadow: 3px 3px var(--text-color);
+    padding-bottom: 15px;
+}
+
+.benefit-list {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.benefit-list div {
+    margin: 15px;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 3px 3px var(--grey-trans);
+    text-shadow: 3px 3px var(--bg-color);
+}
+
+.benefit-list img {
+    max-height: 50px;
+}
