@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;  
@@ -14,6 +14,9 @@
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    font-family: 'Bree Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -32,7 +35,25 @@ header {
     justify-content: space-between;
 }
 
-.header a img {
+.header .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .hero p {
+    font-size: 50px;
+}
+
+.header .hero p span {
+    font-size: 50px;
+    font-style: italic;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    text-shadow: 3px 3px var(--text-color)
+}
+
+.header .hero a img {
     height: 65px;
     margin: 10px;
 }
@@ -108,6 +129,7 @@ article .user {
 article img {
     max-width: 100%;
     border-radius: 5px;
+    box-shadow: 3px 3px 6px;
 }
 
 article p {
@@ -132,6 +154,8 @@ article .detail-user {
     margin-right: 60px;
     padding: 35px;
     border-radius: 5px;
+    box-shadow: 3px 3px 6px;
+    max-height: 600px;
 }
 
 .form h1 {
@@ -175,11 +199,3 @@ select:required:invalid {
   option {
     color: #000;
   }
-
-
-/* media queries */
-@media screen and (max-width:1000px) {
-    body {
-        font-size: 75%;
-    }
-}
