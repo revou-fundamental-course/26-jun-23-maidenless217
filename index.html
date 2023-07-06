@@ -22,8 +22,8 @@
 
             <div class="navbar">
                 <a href="#headTitle" class="home"><button>Home</button></a>
-                <a href="#testi-user" class="ourPackage"><button>Our Package</button></a>
-                <a href="#" class="callUs"><button>Call Us</button></a>
+                <a href="#ourPackage" class="ourPackage"><button>Our Package</button></a>
+                <a href="#cta" class="callUs"><button>Call Us</button></a>
             </div>
         </nav>
         <!-- navbar end -->
@@ -39,16 +39,42 @@
 
     <main>
         <!-- article start -->
-        <article>
-            <img src="img/apple.jpg" alt="apel">
-            <p><i>"setiap hari beli sayur buah yang fresh disini"</i></p>
-            <div class="testi-user" id="testi-user">
-                <img src="img/user.png" alt="pic-user">
-                <div class="user">
-                    <div class="nama-user">Florence Hughes</div>
-                    <div class="detail-user">Ibu Rumah Tangga, 28</div>
+        <article class="slideshow-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="slider fade">
+                <img src="img/apel.jpg" alt="apel">
+                <p><i>"setiap hari beli buah yang fresh disini"</i></p>
+                <div class="testi-user" id="testi-user">
+                    <img src="img/user.png" alt="pic-user">
+                    <div class="user">
+                        <div class="nama-user">Florence Hughes</div>
+                        <div class="detail-user">Ibu Rumah Tangga, 28</div>
+                    </div>
                 </div>
             </div>
+            <div class="slider fade">
+                <img src="img/wortel.jpg" alt="wortel">
+                <p><i>"sayurannya masih segar, sangat enak buat dimasak"</i></p>
+                <div class="testi-user" id="testi-user">
+                    <img src="img/user.png" alt="pic-user">
+                    <div class="user">
+                        <div class="nama-user">Didier Drogba</div>
+                        <div class="detail-user">Mantan Pesepakbola Profesional, 40</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider fade">
+                <img src="img/knife.jpg" alt="knife">
+                <p><i>"siapa yang cita-citanya beli pisau bagus di GrocerBox gaes"</i></p>
+                <div class="testi-user" id="testi-user">
+                    <img src="img/user.png" alt="pic-user">
+                    <div class="user">
+                        <div class="nama-user">Bocil Brando</div>
+                        <div class="detail-user">Bocil Teori, 15</div>
+                    </div>
+                </div>
+            </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </article>
         <!-- article end -->
 
@@ -75,6 +101,7 @@
          <!-- form end -->
     </main>
 
+    <!-- benefit section start -->
     <section class="benefit">
         <h1>Kelebihan berbelanja di GrocerBox</h1>
         <div class="benefit-list">
@@ -84,18 +111,102 @@
             </div>
             <div>
                 <img src="img/2.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quibusdam deserunt error, accusantium quo distinctio!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias. Ex consequatur atque aliquam itaque obcaecati aliquid, laborum rem doloribus magni voluptatem hic sed dignissimos?</p>
             </div>
             <div>
                 <img src="img/3.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quibusdam deserunt error, accusantium quo distinctio!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A exercitationem perspiciatis temporibus repellendus, id similique aspernatur? Architecto maxime provident sint.</p>
             </div>
             <div>
                 <img src="img/4.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quibusdam deserunt error, accusantium quo distinctio!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet assumenda sed iure. Ducimus, maxime facilis!</p>
             </div>
         </div>
     </section>
+    <!-- benefit section start -->
+
+    <!-- package section start -->
+    <section class="ourPackage-section" id="ourPackage">
+        <h1>Our Package</h1>
+        <div class="package-list">
+            <div class="col-1">
+                <ul>
+                    <li class="li-1">
+                        <img src="img/vegetable.png" alt="fresh-vegetable">
+                        Fresh Vegetable
+                        <div class="subtitle">
+                            Sayuran segar langsung dari sumber pertanian terbaik
+                        </div>
+                    </li>
+                    <li class="li-2">
+                        <img src="img/fruit.png" alt="fresh-fruit">
+                        Fresh Fruit
+                        <div class="subtitle">
+                            Buah dengan kualitas terbaik dari lokal atau import dengan harga yang menarik
+                        </div>
+                    </li>
+                    <li class="li-3">
+                        <img src="img/fast-delivery.png" alt="instant-delivery">
+                        Instant Delivery
+                        <div class="subtitle">
+                            Dikirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li class="li-1">
+                        <img src="img/ingredient.png" alt="fresh-vegetable">
+                        Kitchen Ingredient
+                        <div class="subtitle">
+                            Bumbu daput lengkap untuk keperluan memasak kamu
+                        </div>
+                    </li>
+                    <li class="li-2">
+                        <img src="img/kitchen-set.png" alt="fresh-fruit">
+                        Kitchen Set
+                        <div class="subtitle">
+                            Segala jenis alat masak untuk membantu kamu memasak
+                        </div>
+                    </li>
+                    <li class="li-3">
+                        <img src="img/packaging.png" alt="instant-delivery">
+                        Bundling Set
+                        <div class="subtitle">
+                            Bingung masak apa? Sudah tersedia paket untuk masak di dapur mu
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- package section end -->
+
+    <!-- cta section start -->
+    <section class="cta" id="cta">
+        <h1>Your Closing Argument Headline</h1>
+        <h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga optio ut facilis eaque quia, quas ratione et ullam temporibus provident.
+        </h2>
+        <button type="submit" id="btn-cta">CALL TO ACTION</button>
+    </section>
+    <!-- cta section end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="socials">
+            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="img/tik-tok.png" alt="tik-tok"></a>
+            <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+
+        <div class="credit">
+            <p>Created by <span>Irham Dirgantara | &copy; 2023.</span></p>
+        </div>
+    </footer>
+    <!-- footer end -->
     <script src="js/script.js"></script>
 </body>
 </html>
